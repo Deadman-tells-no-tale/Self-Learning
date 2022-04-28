@@ -1,0 +1,5 @@
+ctrl + Shift + P = Clone repository
+@ pulls for users and you can hover over the @user to get a git profile over the user.
+#-mentioned issue numbers, full GitHub issue URLs, and repository specified issues
+
+suggestions are triggered by the "@" character and issue suggestions are triggered by the "#" character. Suggestions are available in the editor and in the Source Control view's input box.
