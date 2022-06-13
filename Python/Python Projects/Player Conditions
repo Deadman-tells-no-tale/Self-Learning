@@ -1,0 +1,11 @@
+from tarfile import DIRTYPE
+
+
+Player_Condition = 0
+
+Player_dry = 0
+Player_wet = 1
+Player_drenched = 3
+Player_soaked = 4
+Player_stuck =5
+
