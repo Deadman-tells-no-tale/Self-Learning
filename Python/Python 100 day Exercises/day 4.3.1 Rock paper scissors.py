@@ -22,6 +22,7 @@ elif user_choice == 1 and randomnumber == 0:
   
 elif user_choice == 2 and randomnumber == 1:
   print(f"You Win! \n{player_hand} beats {computer_hand} ")
-
+elif user_choice > 2  or user_choice < 0:
+    print("Sorry but ... your hand choice is not a suitable option for this game...")
 else:
   print(f"You lose {computer_hand} beats {player_hand} ...")
