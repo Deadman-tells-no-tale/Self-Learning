@@ -1,0 +1,93 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+#
+# Complete the 'degreeOfArray' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+def degreeOfArray(arr):
+    check_item=0
+    lengthitem=len(arr_item)
+    if lengthitem  <  arr_item[arr_count]:
+        number_count += arr_item
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr_count = int(input().strip())
+
+    arr = []
+
+    for _ in range(arr_count):
+        arr_item = int(input().strip())
+        arr.append(arr_item)
+    
+# check the arr for the degree of 1 or 2
+# create if else statement degree 1 
+# another if else for Degree 2
+#check the lengths of both 1 and 2 < or > 
+#
+#
+
+    result = degreeOfArray(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
+
+    #!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+#
+# Complete the 'degreeOfArray' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts INTEGER_ARRAY arr as parameter.
+#
+
+def degreeOfArray(arr):
+    check_item=0
+    lengthitem=len(arr_item)
+    if lengthitem  <  arr_item[arr_count]:
+        number_count += arr_item
+
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    arr_count = int(input().strip())
+
+    arr = []
+
+    for _ in range(arr_count):
+        arr_item = int(input().strip())
+        arr.append(arr_item)
+    
+# check the arr for the degree of 1 or 2
+# create if else statement degree 1 
+# another if else for Degree 2
+#check the lengths of both 1 and 2 < or > 
+#
+#
+
+    result = degreeOfArray(arr)
+
+    fptr.write(str(result) + '\n')
+
+    fptr.close()
