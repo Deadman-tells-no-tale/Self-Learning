@@ -2,6 +2,19 @@ import sys
 import random
 import time
 
+class player:
+    player_alive = True
+    player_health = 100
+    player_manapool=10
+    class race_options:
+        def Elf():
+            health = 110
+        def Golem():
+            health = 150
+        def Human():
+            health = 100
+
+
 def intro():
     print('''
 *******************************************************************************
