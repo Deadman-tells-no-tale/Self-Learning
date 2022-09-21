@@ -6,6 +6,44 @@ class player:
     player_alive = True
     player_health = 100
     player_manapool=10
+
+
+if player.player_alive != True:
+    def player_death():
+            if player_health == 0 or player_health < 0:
+                print("Oh dear it seems you have passed away...")
+                time.sleep(3)
+                continue_game = print("try again?: Y or N")
+            if continue_game == "Y" or "y":
+                print("game continues:")
+            else:
+                print('''
+                                Rest in peace
+                                 _____  _____
+                                <     `/    /
+                                 >         (
+                                | _     _  |
+                                ||_) | |_) |
+                                || \.|.|.  \
+                                |            |
+                     __.______%_|            |__________  _____
+               _____/                                   \|     |
+               /                                             -<
+              |_____.-._________              ____/|________/__|
+                                |            |
+                                |            |
+                                |            |
+                                |            |
+                                |   _        <
+                                |__/         |
+                                 / `--.      |
+                               %|            |%
+                           |/.%%|          -< @%%%
+                           `\%`@|     v      |@@%@%%    - mfj
+                         .%%%@@@|%    |    % @@@%%@%%%%
+                    _.%%%%%%@@@@@@%%_/%\_%@@%%@@@@@@@%%%%%%''')
+            
+
     class race_options:
         def Elf():
             health = 110
@@ -46,46 +84,6 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 
 #Write your code below this line 👇
 
-player_health = 100
-Player_alive = True
-Player_inventory={}
-
-def player_death():
-    while Player_alive != True:
-        if player_health == 0 or player_health < 0:
-            print("Oh dear it seems you have passed away...")
-            time.sleep(3)
-            continue_game = print("try again?: Y or N")
-            if continue_game == "Y" or "y":
-                print("game continues:")
-        else:
-            print('''
-                                Rest in peace
-                                 _____  _____
-                                <     `/     |
-                                 >          (
-                                |   _     _  |
-                                |  |_) | |_) |
-                                |  | \ | |   |
-                                |            |
-                 ______.______%_|            |__________  _____
-               _/                                       \|     |
-              |                                               <
-              |_____.-._________              ____/|___________|
-                                |            |
-                                |            |
-                                |            |
-                                |            |
-                                |   _        <
-                                |__/         |
-                                 / `--.      |
-                               %|            |%
-                           |/.%%|          -< @%%%
-                           `\%`@|     v      |@@%@%%    - mfj
-                         .%%%@@@|%    |    % @@@%%@%%%%
-                    _.%%%%%%@@@@@@%%_/%\_%@@%%@@@@@@@%%%%%%
-        ''')
-            break
 
 
 print("You wake up on an island with only one desire. You don't remember how you arrived but all you know is that you came for treasure")
