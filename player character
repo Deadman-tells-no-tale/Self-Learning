@@ -1,0 +1,9 @@
+import
+
+#player 
+attribute for the players:
+Health = how much damage can they withstand before collapsing
+permadeath = boolean for if the character will be perminenitly incopacitated or reincarnated or resurrected from the reaper. (reaper decides the fate of the player)
+Armour = how much damage is removed or redistributed before damage is carried over to a player.
+Strength = How much consecutive base damage a given player is able to give to their recipients.
+Accuracy = The likely hood they are able to hit the target
