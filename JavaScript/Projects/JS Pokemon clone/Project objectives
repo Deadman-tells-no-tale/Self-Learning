@@ -1,0 +1,37 @@
+First is Create a Map to play on:
+
+objectives for creating a map
+    download a tile map editor
+    find assets to download
+    download tilemap
+    import into project
+Tile Layering for Ocean and Landmasses
+layering and placement of trees and landscaping details
+Collision and Map Boundaries
+Foreground Layers
+Exporting Layers for Project import
+
+NEXT
+Player and Map Development:
+Project Setup
+import and render map
+Player Creation
+Move player through map on Keydown
+player-to-map-boundary collisions
+foreground objectives
+player movement animations
+
+Battles Sequeneces:
+Battle Activations
+transition from map to battle Sequeneces
+draw battescene
+add battle sprites
+add VFX/SFX
+
+Chriscourses.com:
+conversations with NPC
+entering buildings
+traveling to other lands
+item collection and Inventory
+Healthbars and healing
+GYMBATTLES/Elite4

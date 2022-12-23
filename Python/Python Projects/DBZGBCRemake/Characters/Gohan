@@ -1,0 +1,2 @@
+class Gohan:
+    Health = 100

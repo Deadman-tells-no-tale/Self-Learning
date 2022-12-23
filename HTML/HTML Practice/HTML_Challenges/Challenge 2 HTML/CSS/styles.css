@@ -1,8 +1,29 @@
 body {background-color: rgb(74, 171, 216);}
-h1
-h2
-h3
-p
-.contact-me{
-    
+
+h1 {margin:0 px;}
+.topheader {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
 }
+.middlecontainer {
+    
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin-left: 260px;
+    border-style: solid;
+    border-width: 20px;
+    border-color: black;
+}
+.bottomcontainer {
+    background-color: red;
+    margin-left: 500px;
+    width: 200px;
+    height: 200px;
+    border-style:solid;
+    border-width: 10px;}
