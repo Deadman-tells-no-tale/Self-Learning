@@ -1,0 +1,178 @@
+mdn for methods
+if you see [] these mean optional in syntax
+
+strings = "" or '' can also have "''"
+nested single quotes but can't have nested double sadly but you can use escape keys
+
+.length() = length of char
+
+.indexof() 
+.slice(#,#) #where to begin and where to stop (ascending order only)
+
+.slice(#) starts at index #
+
+.replace() replaces an item in a string.
+
+back tick ` used for template literals they allow for info
+${} =fails
+`${}` = evaluates the information first then executes method
+EX
+`you owe me ${100 + 218937}` = "you owe me 219037"
+
+you can also do `$${price}` for a visible dolor sign = "$price" 
+
+
+Math.random() generates random number
+
+Math.floor(Math.random() * 10 + 1;
+floor cuts off the decimal point and the *10 gives a whole number between 0-9 and plus one gives it a 1-10 range
+
+type of doesn't need ()
+typeof = gives type of object
+
+parseint()
+parsefloat() allows to grab the numbers out of a string
+this can be used for forms and will only work if the number is first.
+
+== checks to see if value equals the same but doesn't care of type
+=== is same type and value
+
+use triple all the time
+
+console.log(); allows you to see more while your doing things w javascript or good for debugging.
+console.error(); will show up like an error message in the console
+
+&&=and ||=or !=not
+order of operation for above is  1:! 2:&& then || () comes first as a tru,pcard
+mdn has presedence list 
+if true && false will always return false should any params = false
+|| it will be true should one option is true unless both are false
+
+! works if it's a false statement the choice is true. IF it returns a true statement it will return false
+
+
+ switch(){
+ case {result to check}
+ break;
+ or case will continue to read all cases after
+ }
+
+ if case is similar to another you can add case w nothing after for similarities
+
+ EX
+ switch even or odd ='5'
+    case1:
+        console.log(odd);
+    case2:
+        console.log(even);
+    case3:
+        console.log(odd);
+    case4:
+        console.log(even);
+    case5:
+        console.log(odd);
+    case6:
+        console.log(even);
+    default:
+        console.log("what are you?");
+
+
+you can use this instead:
+switch even || odd ='5'
+    case1:
+    case3:
+    case5:
+        console.log(odd);
+        break;
+    case2:
+    case4:
+    case6:
+        console.log(even);
+        break;
+
+ternary operator 
+condition ? expIfTrue: expIfFalse:
+example would be for offline or online use of a person status
+
+EX
+let status = 'offline';
+
+let color;
+if (status === 'offline'){
+    color = 'red';
+}
+else{
+    color='green';
+}
+
+OR you can use a ternary operator for the same result
+
+let color = status ==='offline' ? 'red' : 'green';
+
+which translates to color check for status  if it's online true would equal red if false then the result will be green giving the script options to pick new things should one or the other be true or false.
+
+
+ARRAys:
+[];
+let primaryColors=[red,yellow,blue];
+let collection = [12,dog,true,'false',null];
+types doesn't matter in arrays.
+
+new Array()
+is blank
+you can create an array by even just [1,2,3,4,5];
+length counts indices
+colors[colors.length-1]
+will give last indices in the array
+
+modifying arrays
+shoppingList = ['cheddar cheese','2% milk'];
+
+shoppinglist[1] = 'Whole Milk'; or you can do shoppingList[2] ='icecream'; which will replace that specific location
+
+if you don't know you have to calculate what index it's at or you can 
+shoppingList[shoppingList.length] = 'tomatoes'
+to add the item to the END of the list.
+
+PUSH AND POPPING ARRAys
+arrays changes happen from right to left
+PUSH 
+shoppinglist.push() allows to push to the end of the array
+
+POP
+will take a value from the end
+shoppinglist.pop()
+removes item and lets you see what was removed. this will remove the item OR if you assign the pop it will move it to the new for example a song:
+
+topsongs["baby come back","linkin park"]
+next song que you can do const nextsong = topsongs.pop()
+next song will now be linkin park but will no longer be available in topsongs[]
+
+SHIFT remove from start
+
+shoppinglist.shift()
+shoppinglist = ['2% milk'];
+
+UNSHIFT adds from start
+shoppinglist.unshift('apple')
+shopping list = ['apple','cheddar cheese','2% milk'];
+
+shoppingList.unshift('apple','Dr.pepper')
+shopping list = ['apple','Dr.pepper','cheddar cheese','2% milk'];
+
+IF you do it one at a time the order is reversed
+
+shoppingList.unshift('apple')
+shoppingList.unshift('Dr.pepper')
+shopping list = ['Dr.pepper','apple','cheddar cheese','2% milk'];
+
+CONCAT
+let fruits = ['apple','banana'];
+let veggies = ['aspargus', 'brussel sprouts'];
+let meats =['chicken','steak','pork']
+
+console.log(fruits.concat(veggies)); result: ['apple','banana','aspargus', 'brussel sprouts'];
+console.log(veggies.concat(fruits)); result: ['aspargus', 'brussel sprouts','apple','banana'];
+
+let allFood = fruits.concat (beggies, meats); result:['apple','banana','aspargus', 'brussel sprouts','chicken','steak','pork'];
+
