@@ -176,3 +176,49 @@ console.log(veggies.concat(fruits)); result: ['aspargus', 'brussel sprouts','app
 
 let allFood = fruits.concat (beggies, meats); result:['apple','banana','aspargus', 'brussel sprouts','chicken','steak','pork'];
 
+includes is for yes or no /true or false to see if an item is in an array and looks for exact match of what's exact
+shoppinglist.includes()
+if you add the name then a position the includes will start it's search where the number starts for the item
+
+indexof tells you where in the array item is indexed
+.method()
+
+Reverse and Join
+Reverse reverses an array in place and changes what is stored.
+join will arrange the array into a single string (how you join) .join(-) words-words-words
+
+Slice allows you to split an array but doesn't change the array by index start and end up to but not including the end if no end it assumes to the end of the array negative will count backwards
+.slice() empty creates a copy of the array under copy
+
+splice up to 3 values
+add removes or replaces existing elements in place of the array
+start delete item[]
+animals [shark,tiger,monkey]
+animal.splice(1,0,'octopus') result = [shark,tiger,monkey,octopus]
+animals.splice(3,2) result= monkey, octopus removed
+animal.splice(0,2,'shark!','octopus)
+
+Sort
+array.sort()
+will update the array w the sort
+numbers are sorted by the numeric string 
+numbers will sort 
+1 100 200 400 1100 1000 to end up looking like 1 100 1000 1100 200 400
+
+const arrays can't change it's reference but can change contents
+
+const foods = ['milk']
+foods.push ('chocolate')
+stays the same
+but can't foods = []
+
+nested arrays
+pairs[[gender],[age],[weightclass]]
+index is [which array][index of selected array]
+
+board game nested array.
+cost board = [
+['0',null,'X']
+[null,'X','0']
+['X','0',null]
+]
