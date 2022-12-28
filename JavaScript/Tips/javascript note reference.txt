@@ -1,3 +1,4 @@
+______________________________________________________________________________________________________________
 mdn for methods
 if you see [] these mean optional in syntax
 
@@ -50,7 +51,7 @@ if true && false will always return false should any params = false
 
 ! works if it's a false statement the choice is true. IF it returns a true statement it will return false
 
-
+______________________________________________________________________________________________________________
  switch(){
  case {result to check}
  break;
@@ -89,7 +90,7 @@ switch even || odd ='5'
     case6:
         console.log(even);
         break;
-
+______________________________________________________________________________________________________________
 ternary operator 
 condition ? expIfTrue: expIfFalse:
 example would be for offline or online use of a person status
@@ -111,7 +112,7 @@ let color = status ==='offline' ? 'red' : 'green';
 
 which translates to color check for status  if it's online true would equal red if false then the result will be green giving the script options to pick new things should one or the other be true or false.
 
-
+______________________________________________________________________________________________________________
 ARRAys:
 [];
 let primaryColors=[red,yellow,blue];
@@ -133,12 +134,12 @@ shoppinglist[1] = 'Whole Milk'; or you can do shoppingList[2] ='icecream'; which
 if you don't know you have to calculate what index it's at or you can 
 shoppingList[shoppingList.length] = 'tomatoes'
 to add the item to the END of the list.
-
+______________________________________________________________________________________________________________
 PUSH AND POPPING ARRAys
 arrays changes happen from right to left
 PUSH 
 shoppinglist.push() allows to push to the end of the array
-
+______________________________________________________________________________________________________________
 POP
 will take a value from the end
 shoppinglist.pop()
@@ -147,12 +148,12 @@ removes item and lets you see what was removed. this will remove the item OR if 
 topsongs["baby come back","linkin park"]
 next song que you can do const nextsong = topsongs.pop()
 next song will now be linkin park but will no longer be available in topsongs[]
-
+______________________________________________________________________________________________________________
 SHIFT remove from start
 
 shoppinglist.shift()
 shoppinglist = ['2% milk'];
-
+______________________________________________________________________________________________________________
 UNSHIFT adds from start
 shoppinglist.unshift('apple')
 shopping list = ['apple','cheddar cheese','2% milk'];
@@ -165,7 +166,7 @@ IF you do it one at a time the order is reversed
 shoppingList.unshift('apple')
 shoppingList.unshift('Dr.pepper')
 shopping list = ['Dr.pepper','apple','cheddar cheese','2% milk'];
-
+______________________________________________________________________________________________________________
 CONCAT
 let fruits = ['apple','banana'];
 let veggies = ['aspargus', 'brussel sprouts'];
@@ -182,14 +183,16 @@ if you add the name then a position the includes will start it's search where th
 
 indexof tells you where in the array item is indexed
 .method()
-
+______________________________________________________________________________________________________________
 Reverse and Join
 Reverse reverses an array in place and changes what is stored.
 join will arrange the array into a single string (how you join) .join(-) words-words-words
 
+______________________________________________________________________________________________________________
 Slice allows you to split an array but doesn't change the array by index start and end up to but not including the end if no end it assumes to the end of the array negative will count backwards
 .slice() empty creates a copy of the array under copy
 
+______________________________________________________________________________________________________________
 splice up to 3 values
 add removes or replaces existing elements in place of the array
 start delete item[]
@@ -198,6 +201,7 @@ animal.splice(1,0,'octopus') result = [shark,tiger,monkey,octopus]
 animals.splice(3,2) result= monkey, octopus removed
 animal.splice(0,2,'shark!','octopus)
 
+______________________________________________________________________________________________________________
 Sort
 array.sort()
 will update the array w the sort
@@ -222,3 +226,119 @@ cost board = [
 [null,'X','0']
 ['X','0',null]
 ]
+
+______________________________________________________________________________________________________________
+how would you group the data total walked total floors total miles total avrg daily calorie burn total active minutes how many days of excercise and avrg restful sleep?
+
+person[walked[],floor[],miles[],calorie[],active[],excercise[],sleep[]]
+______________________________________________________________________________________________________________
+OBjects: 
+collection of properties of key value pairs 
+const fitbitdata={
+    totalsteps:value,
+    name:value
+};
+objects can be anything
+to access its just dot so fitbitdata.totalsteps
+can't access names via numbers but can by strings all names are converted to strings.
+
+cost numbers ={
+    100: one hundred
+    16: sixteen
+};
+to access w numbers you can do numbers[100] or numbers['100']
+you can do dot notation w a number even if set as a string numbers.'76 trombones' 
+numbers must always be in a []
+
+updating or adding properties is by adding =
+numbers['100'] = 'ONE HUNDRED';
+numbers.Smithy = 5;
+numbers.Smithy++;
+numbers.Smithy += 2;
+
+
+const student = {
+    firstname:'Kelly',
+    lastName:'Bates',
+    strengths: ['Music,'Art'],
+    exams: {
+        midterm:92,
+        finals:88
+    }
+}
+
+to access you can do student.exams.finals and update as needed
+
+{player1:{
+    user:'Blue',
+    piece:'X'
+    }
+player2:'muffins',
+board:{
+    ['0',null,'X']
+    [null,'X','0']
+    ['X','0',null]
+    }
+}
+______________________________________________________________________________________________________________
+Array Equality:
+equality w arrays are based off their pointing reference not whats inside the array when comparing arrays. they must be the same reference point of memory
+______________________________________________________________________________________________________________
+JS Loops:
+for loops and while loops
+avoid inifinity loopsiterate over arrays and objects
+
+______________________________________________________________________________________________________________
+For Loops:
+for
+syntax
+for(){
+[initial value];
+[condition];
+[increment expression]
+}
+
+EX:
+for( 
+    let i = 1;
+    i <= 10;
+    i++ or i+=3 
+){
+    console.log('Hello:',i);
+}
+
+
+for loops and arrays:
+EX.
+cost examScores=[98,77,84,91,57,66];
+for (let i = 0; i < examScores.length; i++){
+    console.log(i, examScores[i]);
+}
+
+cost mystudents[
+    {
+        firstName: 'Zues',
+        grade    : 86
+    },{
+        firstName: 'Artemis',
+        grade    : 97
+    },{
+        firstName:'Hera',
+        grade    : 72
+    },{
+        firstName:'Apollo',
+        grade    : 90
+    }];
+
+for(let i = 0; i < mystudents.length; i++){
+    console.log(`${mystudents[i].firstName}`)
+    console.log(`${mystudents[i]['firstName']`)
+
+    let student = mystudents[i];
+    console.log(`${student.firstName} scored ${student.grade}`);
+}
+
+
+
+
+
