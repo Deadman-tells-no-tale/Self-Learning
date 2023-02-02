@@ -1,0 +1,16 @@
+file structures:
+
+scenes
+scripts
+textures
+models
+
+file relevance
+
+hero
+goblin
+imp
+
+type relevance and category
+
+special folders: assets, editor,
